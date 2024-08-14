@@ -1,16 +1,72 @@
-<!DOCTYPE html>
+<!-- menimcha qayeridadir xato qildim 2marta yozilib qolyapti brauzerda -->
+<!DOCTYPE html>  
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Figma maket</title>
-</head>
-<body>
-    
+    <title>Formcarry maketi</title>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+    </style>  </head>
+<body class="bg-gray-50 text-gray-800">
+    <nav class="bg-white shadow-md">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <img src="./images/site-logo.svg" alt="svg">
+            <div class="space-x-8 text-lg">
+                <a href="#" class="hover:text-blue-600">FAQ</a>
+                <a href="#" class="hover:text-blue-600">Docs</a>
+                <a href="#" class="hover:text-blue-600">Integrations</a>
+                <a href="#" class="hover:text-blue-600">Pricing</a>
+            </div>
+            <div class="space-x-4">
+                <a href="#" class="text-gray-600 hover:text-gray-800">Login</a>
+                <a href="#" class="px-4 py-2 bg-blue-950 text-white rounded-lg hover:bg-blue-800">Sign Up</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mx-auto text-center mt-20 ">
+        <h1 class="text-blue-600 font-semibold">COLLECT FORM SUBMISSIONS</h1>
+        <h2 class="text-5xl font-semibold w-[900px] mx-auto text-gray-900 mt-4">
+            Get emails and messages from your HTML form
+        </h2>
+        <p class="text-lg text-gray-600 mt-4  w-[900px] mx-auto">
+            Code your own HTML form and style it, then point your form to formcarry to get email notifications, upload files, block spam and integrate with other apps.
+        </p>
+        <button class="mt-10 px-6 py-3 bg-blue-950 text-white rounded-full text-lg hover:bg-blue-800">
+            Get Started
+        </button>
+    </main>
+
+    <footer class="container mx-auto text-center py-8 mt-20 text-gray-500">
+        <div class="flex justify-center space-x-4 mb-4">
+            <a href="#" class="hover:text-gray-800">Terms of Service</a>
+            <a href="#" class="hover:text-gray-800">Privacy Policy</a>
+        </div>
+        <div class="flex justify-center space-x-4">
+            <a href="#" class="hover:text-gray-800"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="hover:text-gray-800"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="hover:text-gray-800"><i class="fab fa-github"></i></a>
+        </div>
+        <p class="mt-4">formcarry. all rights reserved</p>
+    </footer>
 
     <script src="./js/main.js"></script>
-    <script src="./js/header.js"></script>
-    <script src="./js/hero.js"></script>
-    <script src="./js/footer.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+            }
+          }
+        }
+      }
+    </script>
 </body>
 </html>
